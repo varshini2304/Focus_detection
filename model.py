@@ -10,7 +10,6 @@ val_data = datagen.flow_from_directory('data', target_size=(img_size, img_size),
                                        batch_size=32, subset='validation', class_mode='binary')
 
 
-
 from tensorflow.keras import layers, models
 
 model = models.Sequential([
@@ -40,7 +39,7 @@ import numpy as np
 model = load_model('focus_detection_model.h5')
 
 # Set image path
-img_path = 'data/distracted/distracted_1.jpg'  # Put your actual image file here
+img_path = 'data/focused/focused_1750303008.jpg'  # Put your actual image file here
 img_size = 128
 
 # Load and preprocess the image
